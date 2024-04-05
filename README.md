@@ -1,7 +1,6 @@
 # Park Guadian APP
 
-This is the Final assessment template for CASA0014 - Please use this template and edit the relevant sections to personalise.
-This section has a short introduction to what the application is
+Intert the Google map 
 
 ## Use this README File 
 
