@@ -1,6 +1,8 @@
 # Park Guadian APP
 
-Intert the Google map 
+The App enables you to report environmental concerns in the QEOP. If you come across something such as flying-tipping, dog mess, dirty street that requires to be reported, open the app, and take a photo, quickly and directly to the park relevant authority to deal with in a three-step process
+
+Insert google map
 
 ## Use this README File 
 
