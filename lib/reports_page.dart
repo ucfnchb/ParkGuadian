@@ -13,7 +13,7 @@ class _ReportsPageState extends State<ReportsPage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Text("ReportsPage");
+    return const Text("ReportsInformationPage");
   }
 
 }
