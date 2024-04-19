@@ -1,4 +1,5 @@
 # Park Guardian 
+
 This App enables you to report environmental concerns in the Park or any where on the street. If you come across something such as flying-tipping, dog mess, dirty street that requires to be reported, open the app, and take a photo, quickly and directly to the park relevant authority to deal with in a three-step process. 
 
 ![image](https://github.com/ucfnchb/Yanjun_ParkGuadian-/assets/146333771/e6384529-c5cf-40b6-8636-f9365e47b96c)
