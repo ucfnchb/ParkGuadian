@@ -16,7 +16,7 @@ class _DetailPageState extends State<DetailPage> {
 
   String _selectedValue = 'Abandoned Bike';
   final List<String> _options = ['Please choose one','Abandoned Bike', 'Bird Mess', 'Dead Animal', 'Dog Mess', 'Fly-tipping', 'Footway Defects',
-  'Overhanging foliage', 'Blocked Street', 'Prothole', 'Street Lighting', 'Obstruction', 'Rubbish'];
+  'Overhanging foliage', 'Blocked Street', 'rubbish', 'Street Lighting', 'Obstruction', 'Rubbish'];
   final TextEditingController _descController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
 
