@@ -11,6 +11,10 @@ Issue Detail Page
 
 ![image](https://github.com/ucfnchb/Yanjun_ParkGuadian-/assets/146333771/3dbd78cb-ab7e-4d7c-83f4-d5702e1f30fb)
 
+Detail Entering and Select
+![image](https://github.com/ucfnchb/ParkGuadian/assets/146333771/0d5fcaba-ab25-4a80-963b-7f11ebbfac1c)
+
+
 Sketch 
 ![Sketch](https://github.com/ucfnchb/Yanjun_ParkGuadian-/assets/146333771/f80d8d62-a4eb-42d8-a632-483b12ca9fb6)
 
