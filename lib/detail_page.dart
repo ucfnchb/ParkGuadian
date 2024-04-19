@@ -15,7 +15,7 @@ class DetailPage extends StatefulWidget {
 class _DetailPageState extends State<DetailPage> {
 
   String _selectedValue = 'Abandoned Bike';
-  final List<String> _options = ['Please choose','Abandoned Bike', 'Bird Mess', 'Dead Animal', 'Dog Bin is full', 'Fly-tipping', 'Footway Defects',
+  final List<String> _options = ['Please choose one','Abandoned Bike', 'Bird Mess', 'Dead Animal', 'Dog Mess', 'Fly-tipping', 'Footway Defects',
   'Overhanging foliage', 'Blocked Street', 'Prothole', 'Street Lighting', 'Obstruction on the router', 'Rubbish'];
   final TextEditingController _descController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
