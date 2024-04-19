@@ -67,7 +67,7 @@ class _ReportIssuesPageState extends State<ReportIssuesPage> {
       appBar: AppBar(
         backgroundColor: const Color(0xff154406),
         centerTitle: true,
-        title: const Text('Report issues', style: TextStyle(color: Colors.white, fontSize: 16),),
+        title: const Text('Park Guardian: Issue Reporter', style: TextStyle(color: Colors.white, fontSize: 16),),
       ),
       body: _currentPosition == null
           ? const CircularProgressIndicator()
