@@ -1,27 +1,27 @@
 import 'package:flutter/material.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:location/location.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart'; // google map
+import 'package:location/location.dart'; // location package
 import 'package:park/detail_page.dart';
-
+// for handling the reporting of issue
 class ReportIssuesPage extends StatefulWidget {
   const ReportIssuesPage({super.key});
 
   @override
   State<StatefulWidget> createState() => _ReportIssuesPageState();
 }
-
+// location permission
 class _ReportIssuesPageState extends State<ReportIssuesPage> {
-  final Location location = Location();
+  final Location location = Location(); // get the current location
   late bool _serviceEnabled;
   late PermissionStatus _permissionGranted;
-  LatLng? _currentPosition;
+  LatLng? _currentPosition; // device position currently
 
   @override
   void initState() {
     super.initState();
     _requestPermission();
   }
-
+// request location permisson
   Future<void> _requestPermission() async {
     _serviceEnabled = await location.serviceEnabled();
     if (!_serviceEnabled) {
@@ -41,21 +41,23 @@ class _ReportIssuesPageState extends State<ReportIssuesPage> {
 
     _getCurrentLocation();
   }
-
+// function to get location
   _getCurrentLocation() async {
     final LocationData locationResult = await location.getLocation();
+
     if (locationResult.latitude != null && locationResult.longitude != null) {
       setState(() {
         _currentPosition =
             LatLng(locationResult.latitude!, locationResult.longitude!);
       });
     }
+    //If latitude and longitude are not null, update the state
 
   }
 
   @override
   Widget build(BuildContext context) {
-    Set<Marker> _markers = {};
+    Set<Marker> _markers = {};//  // Set of markers to be used on the Google Map.
     if (_currentPosition != null) {
       _markers.add(Marker(
         markerId: MarkerId("currentLocation"),
@@ -63,6 +65,7 @@ class _ReportIssuesPageState extends State<ReportIssuesPage> {
         infoWindow: InfoWindow(title: 'current Location'),
       ));
     }
+    // page structure
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color(0xff154406),
@@ -72,15 +75,16 @@ class _ReportIssuesPageState extends State<ReportIssuesPage> {
       body: _currentPosition == null
           ? const CircularProgressIndicator()
           : Column(
+        // button to start reporting
         children: [
           Expanded(child: GoogleMap(
             initialCameraPosition: CameraPosition(
               target: _currentPosition!,
               zoom: 14.0,
             ),
-            markers: _markers,
+            markers: _markers,// marker on the map
           )),
-          GestureDetector(
+          GestureDetector( // click the container to the issue detail page
             child: Container(
               width: double.infinity,
               height: 40,
