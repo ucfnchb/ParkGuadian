@@ -9,7 +9,7 @@ Future<void> main() async {
   await Hive.initHive(); // phone local storage
   runApp(const MyApp());
 }
-
+// stateless widget
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Park Guardian',
+      title: 'Park Guardian', // the title of the app
       theme: ThemeData(
         primarySwatch: Colors.blue, // color theme
       ),
-      home: const MyHomePage(),
+      home: const MyHomePage(), // the home widget. displayed first
     );
   }
 }
