@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:park/hive_ext.dart';
 
-import 'item_detail_page.dart'; // import the item detail
+import 'item_detail_page.dart';
+
 //display a list of reports
 class ReportsPage extends StatefulWidget {
   const ReportsPage({super.key});
@@ -34,7 +35,7 @@ class _ReportsPageState extends State<ReportsPage> {
           ...Hive.getData().map((e) {// use hive to get the all data and list reports
             return GestureDetector(
               child: Column(
-                children: [
+                children: [// display issue options, location,email address
                   _buildLabel('Issue Category:', '${e['email']}'),
                   _buildLabel('Latitude:', 'latitude:${e['latitude']}'),
                   _buildLabel('Longitude:', 'longitude:${e['longitude']}'),
