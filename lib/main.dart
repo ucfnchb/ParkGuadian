@@ -1,14 +1,15 @@
+// import packages
 import 'package:flutter/material.dart';
-import 'package:hive_flutter/hive_flutter.dart';
+import 'package:hive_flutter/hive_flutter.dart'; // storage
 import 'package:park/hive_ext.dart';
 import './report_issues_page.dart';
 import './reports_page.dart';
 
 Future<void> main() async {
-  await Hive.initHive();
+  await Hive.initHive(); // phone local storage
   runApp(const MyApp());
 }
-
+// stateless widget
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -16,11 +17,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Park Guardian',
+      title: 'Park Guardian', // the title of the app
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.blue, // color theme
       ),
-      home: const MyHomePage(),
+      home: const MyHomePage(), // the home widget. displayed first
     );
   }
 }
@@ -37,33 +38,33 @@ class _MyHomePageState extends State<MyHomePage> {
   int _currentIndex = 0;
 
   final List<Widget> _children = [
-    const ReportIssuesPage(),
-    const ReportsPage(),
+    const ReportIssuesPage(), //widget for report issues
+    const ReportsPage(), // widget for viewing my reported issues
   ];
 
   void onTabTapped(int index) {
     setState(() {
-      _currentIndex = index;
+      _currentIndex = index; //index updating
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _children[_currentIndex],
+      body: _children[_currentIndex], //display selected tab
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: const Color(0xff154406),
+        backgroundColor: const Color(0xff154406),//dark green color
         onTap: onTabTapped,
         currentIndex: _currentIndex,
-        showSelectedLabels: false,
+        showSelectedLabels: false, // hide labels for selected tabs
         showUnselectedLabels: false,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.book_outlined),
+            icon: Icon(Icons.book_outlined), //icon for map, first tab
             label: ""
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: Icon(Icons.person), // my report icon
             label: ""
           )
         ],
