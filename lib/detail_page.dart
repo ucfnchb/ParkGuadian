@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:hive_flutter/hive_flutter.dart';
+import 'package:hive_flutter/hive_flutter.dart'; // local storage
 import 'package:park/hive_ext.dart';
-import 'package:park/reports_page.dart';
+import 'package:park/reports_page.dart'; // reports page import which list all the reports
 
 class DetailPage extends StatefulWidget {
-  final LatLng currentPosition;
+  final LatLng currentPosition; // location to reporting
   const DetailPage({super.key, required this.currentPosition});
   @override
   State<StatefulWidget> createState() => _DetailPageState();
@@ -13,10 +13,14 @@ class DetailPage extends StatefulWidget {
 }
 
 class _DetailPageState extends State<DetailPage> {
-
-  String _selectedValue = 'Abandoned Bike';
+  // A variable that holds the currently selected issue category.
+  String _selectedValue = 'Please choose';
+  // A list of issue categories that the user can report.
+  // list of issue categories
   final List<String> _options = ['Please choose','Abandoned Bike', 'Bird Mess', 'Dead Animal', 'Dog Bin is full', 'Fly-tipping', 'Footway Defects',
   'Overhanging foliage', 'Blocked Street', 'Prothole', 'Street Lighting', 'Obstruction on the router', 'Rubbish'];
+
+  // text input for issue description and email
   final TextEditingController _descController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
 
@@ -29,6 +33,7 @@ class _DetailPageState extends State<DetailPage> {
       appBar: AppBar(
         leading: Center(
           child: GestureDetector(
+            // A clickable icon that allows the user to navigate back to the previous screen.
             child: const Icon(Icons.arrow_back, size: 30, color: Colors.black,),
             onTap: () {
               Navigator.pop(context);
@@ -38,6 +43,7 @@ class _DetailPageState extends State<DetailPage> {
         backgroundColor: Colors.white,
         title: const Text('Detail', style: TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.w800),),
       ),
+      // page layout
       body: Column(
         children: [
           _buildLabel('Report Location:', 'latitude:${widget.currentPosition.latitude}, longitude:${widget.currentPosition.longitude}', null),
@@ -63,8 +69,9 @@ class _DetailPageState extends State<DetailPage> {
                   child: const Text('SAVE', style: TextStyle(color: Colors.white),),
                   onPressed: () async {
                     if (_selectedValue == _options[0] || _descController.text.isEmpty || _emailController.text.isEmpty) {
-                      _showSnackBar(context, 'Please select the issue type！');
+                      _showSnackBar(context, 'Please select the fill up all columns！');
                     } else {
+                      // if validation pass
                       Map<String, dynamic> data = {
                         'latitude': widget.currentPosition.latitude,
                         'longitude': widget.currentPosition.longitude,
@@ -73,8 +80,9 @@ class _DetailPageState extends State<DetailPage> {
                         'email': _emailController.text,
                       };
                       await Hive.putData(data);
-                      _showSnackBar(context, 'Save Success！');
+                      _showSnackBar(context, 'Save Success！');// data saved into hive local storage
                       Navigator.push(context, MaterialPageRoute(builder: (ctx) => ReportsPage()));
+                      // navigate to reports page
                       // Navigator.pop(context);
 
                     }
