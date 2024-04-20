@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:location/location.dart';
+import 'package:park/detail_page.dart';
 
 class ReportIssuesPage extends StatefulWidget {
   const ReportIssuesPage({super.key});
@@ -66,7 +67,7 @@ class _ReportIssuesPageState extends State<ReportIssuesPage> {
       appBar: AppBar(
         backgroundColor: const Color(0xff154406),
         centerTitle: true,
-        title: const Text('Park Guardian: Issue Reporter', style: TextStyle(color: Colors.white, fontSize: 16),),
+        title: const Text('Report issues', style: TextStyle(color: Colors.white, fontSize: 16),),
       ),
       body: _currentPosition == null
           ? const CircularProgressIndicator()
@@ -79,13 +80,18 @@ class _ReportIssuesPageState extends State<ReportIssuesPage> {
             ),
             markers: _markers,
           )),
-          Container(
-            width: double.infinity,
-            height: 40,
-            color: Colors.blueGrey,
-            child: const Center(
-              child: Text('Start report at this location', style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w800),),
+          GestureDetector(
+            child: Container(
+              width: double.infinity,
+              height: 40,
+              color: Colors.blueGrey,
+              child: const Center(
+                child: Text('Start report at this location', style: TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w800),),
+              ),
             ),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (ctx) => DetailPage(currentPosition: _currentPosition!,)));
+            },
           ),
         ],
       ),
