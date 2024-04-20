@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:park/hive_ext.dart';
 import './report_issues_page.dart';
 import './reports_page.dart';
 
-void main() {
+Future<void> main() async {
+  await Hive.initHive();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
