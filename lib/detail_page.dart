@@ -13,17 +13,29 @@ class DetailPage extends StatefulWidget {
 }
 
 class _DetailPageState extends State<DetailPage> {
-  // A variable that holds the currently selected issue category.
-  String _selectedValue = 'Please choose';
-  // A list of issue categories that the user can report.
-  // list of issue categories
-  final List<String> _options = ['Please choose','Abandoned Bike', 'Bird Mess', 'Dead Animal', 'Dog Bin is full', 'Fly-tipping', 'Footway Defects',
-  'Overhanging foliage', 'Blocked Street', 'Prothole', 'Street Lighting', 'Obstruction on the router', 'Rubbish'];
-
-  // text input for issue description and email
+  // Text field controllers for capturing user input on issue descriptions and contact email.
   final TextEditingController _descController = TextEditingController();
   final TextEditingController _emailController = TextEditingController();
 
+  // Currently selected value in the dropdown menu for issue categories.
+  String _selectedValue = 'Please choose';
+
+  // List of selectable issue categories for the dropdown menu. This includes generic options and specific issues.
+  final List<String> _options = [
+    'Please choose',
+    'Abandoned Bike',
+    'Bird Mess',
+    'Dead Animal',
+    'Dog Bin is full',
+    'Fly-tipping',
+    'Footway Defects',
+    'Overhanging foliage',
+    'Blocked Street',
+    'Pothole',
+    'Street Lighting',
+    'Obstruction on the router',
+    'Rubbish'
+  ];
 
 
   @override
