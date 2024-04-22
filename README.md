@@ -76,9 +76,13 @@ As Park Guardian continues to evolve, I plan to enhance the application with new
 These planned features aim to make Park Guardian not just a tool for reporting environmental issues but a platform that fosters a proactive, engaged, and environmentally conscious community. 
 
 ## Requirements
-1. Flutter: Ensure you have the latest version of Flutter installed. 
-2. Google Maps API: The app integrates Google Maps for location-based features. An API key for Google Maps is required for both Android and iOS platforms.
-3. Hive: used for local storage of data - user reports. To integrate Hive, follow these setup steps:
+Ensure you have the following installed:
+1. Flutter: Ensure you have the latest version of Flutter installed. (version 3.0 or later)
+2. Dart (version 2.18 or later)
+3. Android Studio or Visual Studio Code with Flutter plugins
+4. Android or iOS device or emulator
+5. Google Maps API: The app integrates Google Maps for location-based features. An API key for Google Maps is required for both Android and iOS platforms
+6. Hive: used for local storage of data - user reports. To integrate Hive, follow these setup steps:
    - Add Hive to project by including it in pubspec.yaml file:
      
 ![image](https://github.com/ucfnchb/ParkGuardian/assets/146333771/acfed329-1960-4d68-b5c2-0eeaf4d1d743)
@@ -87,5 +91,7 @@ These planned features aim to make Park Guardian not just a tool for reporting e
 
 ![image](https://github.com/ucfnchb/ParkGuardian/assets/146333771/24f37fb7-768d-4b6a-80bd-0a2b117bd690)
 
+## Contact Me
+[Email: ucfnchb@ucl.ac.uk] (Email: ucfnchb@ucl.ac.uk)
 
 
