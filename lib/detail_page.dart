@@ -81,7 +81,7 @@ class _DetailPageState extends State<DetailPage> {
                   child: const Text('SAVE', style: TextStyle(color: Colors.white),),
                   onPressed: () async {
                     if (_selectedValue == _options[0] || _descController.text.isEmpty || _emailController.text.isEmpty) {
-                      _showSnackBar(context, 'Please select the fill up all columns！');
+                      _showSnackBar(context, 'Please fill up all columns！');
                     } else {
                       // if validation pass
                       Map<String, dynamic> data = {
