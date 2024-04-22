@@ -14,7 +14,7 @@ This app would make it easy to quickly report environmental concerns, and it wou
 
 ### Initial Sketch
 
-![app_Sketch](https://github.com/ucfnchb/ParkGuardian/assets/146333771/f6259b11-8d42-4303-b824-b8594e581548)
+![sketch2](https://github.com/ucfnchb/ParkGuardian/assets/146333771/127ff0d6-ab16-4483-bc59-41ff9c15e1f3)
 
 
 
