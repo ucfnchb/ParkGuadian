@@ -36,7 +36,7 @@ class _ReportsPageState extends State<ReportsPage> {
             return GestureDetector(
               child: Column(
                 children: [// display issue options, location,email address
-                  _buildLabel('Issue Category:', '${e['email']}'),
+                  _buildLabel('Choose one:', '${e['email']}'),
                   _buildLabel('Latitude:', 'latitude:${e['latitude']}'),
                   _buildLabel('Longitude:', 'longitude:${e['longitude']}'),
                   _buildLabel('Issue Category:', '${e['category']}'),
