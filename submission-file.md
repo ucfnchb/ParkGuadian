@@ -24,9 +24,9 @@ The App enables you to report environmental concerns in the Parks. If you come a
 
 1. Google. (2023). Integrating Google Maps in Android Studio. [Online] Available at: <[https://www.google.com/search?q=google+map+insert+in+android+studio](https://www.google.com/search?q=google+map+insert+in+android+studio&rlz=1C1ONGR_enGB1078GB1078&oq=google+map+insert+in+android+studio+&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIICAEQABgWGB4yDQgCEAAYhgMYgAQYigUyDQgDEAAYhgMYgAQYigUyCggEEAAYgAQYogQyCggFEAAYgAQYogQyCggGEAAYgAQYogQyCggHEAAYgAQYogQyBggIEEUYQNIBCTE2NDI4ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:e6618945,vid:JzxjNNCYt_o,st:0)> [Accessed 18 April 2024].
 
-2. GeeksforGeeks. Flutter: Store Data in Hive Local Database. [Online] Available at: [https://www.geeksforgeeks.org/flutter-store-data-in-hive-local-database/](https://www.geeksforgeeks.org/flutter-store-data-in-hive-local-database/) [Accessed 22 April 2024].
+2. GeeksforGeeks. Flutter: Store Data in Hive Local Database. [Online] Available at: [https://www.geeksforgeeks.org/flutter-store-data-in-hive-local-database/](https://www.geeksforgeeks.org/flutter-store-data-in-hive-local-database/) [Accessed 19 April 2024].
 
-4. Stack Overflow user. (2021). Flutter Hive: How to locate box files. Stack Overflow. [Online] Available at:[https://stackoverflow.com/questions/67700936/flutter-hive-how-to-locate-box-files](https://stackoverflow.com/questions/67700936/flutter-hive-how-to-locate-box-files) [Accessed 22 April 2024].
+4. Stack Overflow user. (2021). Flutter Hive: How to locate box files. Stack Overflow. [Online] Available at:[https://stackoverflow.com/questions/67700936/flutter-hive-how-to-locate-box-files](https://stackoverflow.com/questions/67700936/flutter-hive-how-to-locate-box-files) [Accessed 19 April 2024].
 
 ## Declaration of Authorship
 
