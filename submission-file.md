@@ -1,6 +1,6 @@
 
 CASA0015: Mobile Systems + Interactions
-author: "Chen Yanjun
+author: Chen Yanjun
 date: 22 April 2024
 
 ## Link to GitHub Repository
