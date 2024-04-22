@@ -10,7 +10,7 @@ date: 22 April 2024
 ## Link to GitHub Repository
 
 Flutter Application Name - Park Guardian
-GitHub Repository - https://github.com/ucfnchb/ParkGuardian
+GitHub Repository - [https://github.com/ucfnchb/ParkGuardian](https://github.com/ucfnchb/ParkGuardian)
 
 ## Introduction to Application
 
