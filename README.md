@@ -12,6 +12,11 @@ This app would make it easy to quickly report environmental concerns, and it wou
 
 ![image](https://github.com/ucfnchb/ParkGuardian/assets/146333771/07df2f81-1579-4e13-9798-df689e99d4cd)
 
+### Initial Sketch
+
+![app_Sketch](https://github.com/ucfnchb/ParkGuardian/assets/146333771/f6259b11-8d42-4303-b824-b8594e581548)
+
+
 
 ### Report Issue Page
 Main function: allows user to report environmental issue around them or they may concern based on their current location, to detail specific issues in a park or area they are currently at. 
@@ -91,7 +96,9 @@ Ensure you have the following installed:
 
 ![image](https://github.com/ucfnchb/ParkGuardian/assets/146333771/24f37fb7-768d-4b6a-80bd-0a2b117bd690)
 
-## Contact Me
-[Email: ucfnchb@ucl.ac.uk] (Email: ucfnchb@ucl.ac.uk)
+## Contact Details
+Please feel free to contact me if you have any question or idea to improve this Park Guardian:
+[Email: ucfnchb@ucl.ac.uk] 
+
 
 
