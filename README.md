@@ -66,6 +66,15 @@ Upon tapping a submitted report, show detailed issue information
 
 
 ## Future Features and Development
+As Park Guardian continues to evolve, I plan to enhance the application with new features that will further improve the user experience and expand the app's functionality.
+
+1. Photo Uploads: Allow users to upload photos with their reports to provide visual evidence of the issues, enhancing the verification process for local authorities.
+2. Integration of Firebase and Cloud Firestore
+- User Account Management: Implement Firebase Authentication to manage user registrations and logins securely. This feature will allow users to create personal accounts to track their reports, participate in community events, and receive updates directly.
+- Report Management with Cloud Firestore: Utilize Cloud Firestore to store and manage environmental reports submitted by users
+
+These planned features aim to make Park Guardian not just a tool for reporting environmental issues but a platform that fosters a proactive, engaged, and environmentally conscious community. 
+
 
 
 
